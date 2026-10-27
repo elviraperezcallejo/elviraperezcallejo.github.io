@@ -1,0 +1,9 @@
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+
+# Archivos locales que no forman parte de la web
+.claude/
+privado/

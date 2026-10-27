@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){var l;try{l=new URLSearchParams(location.search).get("lang")||localStorage.getItem("lang");}catch(e){}if(l!=="es"&&l!=="en"){l=/^es\b/i.test(navigator.language||"")?"es":"en";}document.documentElement.lang=l;})();</script>
+  <title>Journey · Elvira Pérez Callejo</title>
+  <meta name="description" content="Where Elvira Pérez Callejo has been and will be: conferences, seminars, research stays and milestones, with photos.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-en="Journey · Elvira Pérez Callejo" data-title-es="Diario · Elvira Pérez Callejo">
+<a class="skip" href="#main"><span data-lang="en">Skip to content</span><span data-lang="es">Ir al contenido</span></a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" width="36" height="36">Elvira Pérez Callejo</a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html"><span data-lang="en">About</span><span data-lang="es">Inicio</span></a>
+      <a href="research.html"><span data-lang="en">Research</span><span data-lang="es">Investigación</span></a>
+      <a href="publications.html"><span data-lang="en">Publications</span><span data-lang="es">Publicaciones</span></a>
+      <a href="talks.html"><span data-lang="en">Talks</span><span data-lang="es">Charlas</span></a>
+      <a href="teaching.html"><span data-lang="en">Teaching</span><span data-lang="es">Docencia</span></a>
+      <a href="journey.html" aria-current="page"><span data-lang="en">Journey</span><span data-lang="es">Diario</span></a>
+      <a href="others.html"><span data-lang="en">Others</span><span data-lang="es">Otros</span></a>
+    </nav>
+    <div class="head-right">
+      <button class="lang-toggle"><span data-lang="en" title="Ver en español">ES</span><span data-lang="es" title="View in English">EN</span></button>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav"><span data-lang="en">Menu</span><span data-lang="es">Menú</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <div class="j-head">
+    <div class="page-head" style="margin:0">
+      <h1><span data-lang="en">Journey</span><span data-lang="es">Diario</span></h1>
+      <p data-lang="en">Where I have been, and where I will be next: conferences, seminars, research stays and a few milestones along the way.</p>
+      <p data-lang="es">Dónde he estado y dónde estaré: congresos, seminarios, estancias de investigación y algunos hitos por el camino.</p>
+      <div class="stats small">
+        <div class="stat"><b data-count="events">–</b><span data-lang="en">conferences</span><span data-lang="es">congresos</span></div>
+        <div class="stat"><b data-count="cities">–</b><span data-lang="en">cities</span><span data-lang="es">ciudades</span></div>
+        <div class="stat"><b data-count="countries">–</b><span data-lang="en">countries</span><span data-lang="es">países</span></div>
+      </div>
+      <p class="muted" style="font-size:.9rem" data-lang="en">Click a photo to see the whole gallery. On the map, the dashed circles are places I am about to visit.</p>
+      <p class="muted" style="font-size:.9rem" data-lang="es">Haz clic en una foto para ver la galería completa. En el mapa, los círculos discontinuos son los lugares a los que iré próximamente.</p>
+    </div>
+    <div id="journey-map" role="region" aria-label="Map"></div>
+  </div>
+
+  <div id="journey-upcoming"></div>
+
+  <div class="filters" role="group" aria-label="Filter">
+    <button class="chip" data-filter="all" aria-pressed="true"><span data-lang="en">All</span><span data-lang="es">Todo</span></button>
+    <button class="chip" data-filter="photos" aria-pressed="false"><span data-lang="en">With photos</span><span data-lang="es">Con fotos</span></button>
+    <button class="chip" data-filter="talks" aria-pressed="false"><span data-lang="en">With a talk or poster</span><span data-lang="es">Con charla o póster</span></button>
+    <button class="chip" data-filter="milestones" aria-pressed="false"><span data-lang="en">Milestones &amp; stays</span><span data-lang="es">Hitos y estancias</span></button>
+  </div>
+
+  <div id="journey-list"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© <span data-year>2026</span> Elvira Pérez Callejo · <a href="mailto:elvira.perez@uva.es">elvira.perez@uva.es</a></span>
+    <span>Departamento de Álgebra, Análisis Matemático, Geometría y Topología · Universidad de Valladolid</span>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data/events.js"></script>
+<script src="data/photos.js"></script>
+<script src="data/publications.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
