@@ -403,5 +403,10 @@ window.EVENTS = [
     name: "11th RGAS meeting (IMUS)",
     url: "https://sites.google.com/view/rgas27-narvaez70/11th-rgas-meeting",
     talks: [{ type: "talk", date: "2027-01-11",
-              title: "Polyhedral cones and Cox rings for rational surfaces built from pencils at infinity" }] }
+              title: "Polyhedral cones and Cox rings for rational surfaces built from pencils at infinity" }] },
+
+  { id: "2027-narvaez70", start: "2027-01-13", end: "2027-01-15", city: "Sevilla",
+    name: "D-modules and singularities — conference for Luis Narváez Macarro’s 70th birthday (IMUS)",
+    name_es: "D-modules and singularities — congreso por el 70 cumpleaños de Luis Narváez Macarro (IMUS)",
+    url: "https://sites.google.com/view/rgas27-narvaez70/d-modules-and-singularities" }
 ];
